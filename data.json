@@ -1,0 +1,137 @@
+{
+  "header": [
+    {
+      "name": "Julio Esteban",
+      "goalLife": "Crear soluciones digitales útiles, escalables y con impacto real en la vida de las personas.",
+      "email": "julio.esteban@example.com",
+      "phoneNumber": "+52 81 2345 6789",
+      "location": "Monterrey, México",
+      "socialNetwork": "@julioesteban.dev",
+      "photoUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "name": "Julio Esteban",
+      "goalLife": "Amante de la tecnología, la innovación y la experiencia de usuario.",
+      "email": "julioesteban.dev@gmail.com",
+      "phoneNumber": "+52 81 9988 7766",
+      "location": "Guadalajara, México",
+      "socialNetwork": "linkedin.com/in/julioesteban",
+      "photoUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+    }
+  ],
+  "work-experience": [
+    {
+      "position": "Full Stack Developer",
+      "company": "Nexa Digital",
+      "startDate": "2023",
+      "endDate": "2025",
+      "location": "Monterrey, México",
+      "accomplishments": "Diseñé e implementé módulos de administración, APIs REST y dashboards internos para optimizar procesos operativos."
+    },
+    {
+      "position": "Frontend Developer",
+      "company": "BluePeak Studio",
+      "startDate": "2020",
+      "endDate": "2023",
+      "location": "Remoto",
+      "accomplishments": "Desarrollé interfaces modernas con Angular, mejoré la usabilidad de varios productos y reduje tiempos de carga en aplicaciones web."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Tecnológico de Monterrey",
+      "degree": "Ingeniería en Sistemas Computacionales",
+      "startDate": "2016",
+      "endDate": "2021",
+      "location": "Monterrey, México",
+      "description": "Especialización en desarrollo de software, bases de datos y arquitectura de soluciones."
+    },
+    {
+      "institution": "Coursera",
+      "degree": "Especialización en Desarrollo Web y Data Analytics",
+      "startDate": "2022",
+      "endDate": "2024",
+      "location": "Remoto",
+      "description": "Cursos de frontend, análisis de datos y mejores prácticas para desarrollo profesional."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "name": "Angular",
+      "level": "Avanzado"
+    },
+    {
+      "category": "Frontend",
+      "name": "TypeScript",
+      "level": "Avanzado"
+    },
+    {
+      "category": "Backend",
+      "name": "Node.js",
+      "level": "Intermedio"
+    },
+    {
+      "category": "Data",
+      "name": "Python",
+      "level": "Avanzado"
+    },
+    {
+      "category": "Database",
+      "name": "MongoDB",
+      "level": "Intermedio"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Angular Developer",
+      "issuer": "Google / Platzi",
+      "date": "2024",
+      "description": "Curso intensivo de desarrollo con Angular, componentes y arquitectura de aplicaciones web."
+    },
+    {
+      "title": "JavaScript Moderno",
+      "issuer": "Udemy",
+      "date": "2023",
+      "description": "Fundamentos avanzados de JavaScript, ES6+, DOM y programación asíncrona."
+    },
+    {
+      "title": "Data Analytics Essentials",
+      "issuer": "IBM SkillsBuild",
+      "date": "2022",
+      "description": "Conceptos clave de análisis de datos, visualización y toma de decisiones basadas en métricas."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "level": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "level": "B2 / Intermedio alto"
+    },
+    {
+      "language": "Francés",
+      "level": "A2 / Básico"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Inteligencia artificial",
+      "description": "Explorar soluciones basadas en IA para automatizar procesos y mejorar la experiencia de usuario."
+    },
+    {
+      "name": "Desarrollo web",
+      "description": "Crear experiencias modernas, rápidas y centradas en el usuario."
+    },
+    {
+      "name": "Datos y analítica",
+      "description": "Convertir datos en información útil para apoyar decisiones estratégicas."
+    },
+    {
+      "name": "Tecnología e innovación",
+      "description": "Mantenerme actualizado con nuevas herramientas, frameworks y tendencias digitales."
+    }
+  ]
+}

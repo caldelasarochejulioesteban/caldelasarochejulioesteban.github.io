@@ -1,0 +1,17 @@
+<div class="education-container">
+  <h3>Educación</h3>
+
+  <ng-container *ngIf="education$ | async as educationList">
+    <ul *ngIf="educationList.length; else defaultEducation" class="education-list">
+      <li *ngFor="let item of educationList" class="education-item">
+        <h4>{{ item.degree }}  {{ item.institution }}</h4>
+        <p>{{ item.startDate }} - {{ item.endDate }} | {{ item.location }}</p>
+        <p>{{ item.description }}</p>
+      </li>
+    </ul>
+  </ng-container>
+
+  <ng-template #defaultEducation>
+    <p>No hay información de educación disponible.</p>
+  </ng-template>
+</div>

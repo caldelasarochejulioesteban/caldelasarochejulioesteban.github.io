@@ -1,0 +1,30 @@
+<div class="header-container" *ngIf="header$ | async as headerList">
+  <ng-container *ngIf="headerList[0] as headerData; else emptyHeader">
+    <div class="profile-image-frame">
+      <img
+        [ngSrc]="headerData.photoUrl || '/Frozono_1.webp'"
+        fill
+        priority
+        [alt]="headerData.name"
+        class="profile-img"
+      />
+    </div>
+
+    <div class="profile-copy">
+      <p class="eyebrow">Desarrollador de software</p>
+      <h1>{{ headerData.name }}</h1>
+      <p class="goal">{{ headerData.goalLife }}</p>
+
+      <ul class="contact-info" aria-label="Información de contacto">
+        <li><a [href]="'mailto:' + headerData.email">{{ headerData.email }}</a></li>
+        <li><a [href]="'tel:' + headerData.phoneNumber">{{ headerData.phoneNumber }}</a></li>
+        <li>{{ headerData.location }}</li>
+        <li>{{ headerData.socialNetwork }}</li>
+      </ul>
+    </div>
+  </ng-container>
+
+  <ng-template #emptyHeader>
+    <p>No hay información del perfil disponible.</p>
+  </ng-template>
+</div>

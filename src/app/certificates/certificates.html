@@ -1,0 +1,17 @@
+<div class="certificates-container">
+  <h3>Certificaciones</h3>
+
+  <ng-container *ngIf="certificates$ | async as certificatesList">
+    <ul *ngIf="certificatesList.length; else defaultCertificates" class="certificates-list">
+      <li *ngFor="let item of certificatesList" class="certificate-item">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.issuer }} | {{ item.date }}</p>
+        <p>{{ item.description }}</p>
+      </li>
+    </ul>
+
+    <ng-template #defaultCertificates>
+      <p>No hay certificaciones disponibles.</p>
+    </ng-template>
+  </ng-container>
+</div>

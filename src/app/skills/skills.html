@@ -1,0 +1,17 @@
+<div class="skills-container">
+  <h3>Habilidades</h3>
+
+  <ng-container *ngIf="skills$ | async as skillsList">
+    <ul *ngIf="skillsList.length; else defaultSkills" class="skills-list">
+      <li *ngFor="let skill of skillsList" class="skill-item">
+        <strong>{{ skill.name }}</strong>
+        <span>{{ skill.category }}</span>
+        <em>{{ skill.level }}</em>
+      </li>
+    </ul>
+
+    <ng-template #defaultSkills>
+      <p>No hay habilidades disponibles.</p>
+    </ng-template>
+  </ng-container>
+</div>

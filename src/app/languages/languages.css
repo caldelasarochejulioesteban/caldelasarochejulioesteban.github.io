@@ -1,0 +1,46 @@
+:host {
+  display: block;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.languages-container h3 {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.languages-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.language-item:last-child {
+  border-bottom: 0;
+}
+
+.language-item strong {
+  font-size: 0.95rem;
+}
+
+.language-item span {
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  text-align: right;
+}

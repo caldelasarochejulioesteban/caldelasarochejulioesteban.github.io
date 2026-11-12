@@ -1,0 +1,8 @@
+<div class="work-container">
+  <h3>Experiencia Laboral</h3>
+  <div *ngFor="let item of workExperience$ | async" class="work-item">
+    <h4>{{ item.position }} - {{ item.company }}</h4>
+    <p class="date-location">{{ item.startDate }} - {{ item.endDate }} | {{ item.location }}</p>
+    <p class="accomplishments">{{ item.accomplishments }}</p>
+  </div>
+</div>

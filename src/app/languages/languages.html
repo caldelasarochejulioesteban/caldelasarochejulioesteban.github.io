@@ -1,0 +1,16 @@
+<div class="languages-container">
+  <h3>Idiomas</h3>
+
+  <ng-container *ngIf="languages$ | async as languagesList">
+    <ul *ngIf="languagesList.length; else defaultLanguages" class="languages-list">
+      <li *ngFor="let item of languagesList" class="language-item">
+        <strong>{{ item.language }}</strong>
+        <span>{{ item.level }}</span>
+      </li>
+    </ul>
+
+    <ng-template #defaultLanguages>
+      <p>No hay idiomas registrados.</p>
+    </ng-template>
+  </ng-container>
+</div>

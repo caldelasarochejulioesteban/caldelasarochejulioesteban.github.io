@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.work-container h3 {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.work-item {
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent-soft);
+}
+
+.work-item + .work-item {
+  margin-top: 1.25rem;
+}
+
+.work-item h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.date-location {
+  margin: 0 0 0.6rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.accomplishments {
+  margin: 0;
+  color: var(--muted-text);
+  line-height: 1.65;
+}

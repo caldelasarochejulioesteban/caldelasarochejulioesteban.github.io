@@ -1,0 +1,16 @@
+<div class="interests-container">
+  <h3>Intereses</h3>
+
+  <ng-container *ngIf="interests$ | async as interestsList">
+    <ul *ngIf="interestsList.length; else defaultInterests" class="interests-list">
+      <li *ngFor="let item of interestsList" class="interest-item">
+        <strong>{{ item.name }}</strong>
+        <p>{{ item.description }}</p>
+      </li>
+    </ul>
+
+    <ng-template #defaultInterests>
+      <p>No hay intereses registrados.</p>
+    </ng-template>
+  </ng-container>
+</div>

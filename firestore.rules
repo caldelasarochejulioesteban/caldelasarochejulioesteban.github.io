@@ -1,0 +1,33 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /header/{document} {
+      allow read: if true;
+    }
+
+    match /work-experience/{document} {
+      allow read: if true;
+    }
+
+    match /education/{document} {
+      allow read: if true;
+    }
+
+    match /skills/{document} {
+      allow read: if true;
+    }
+
+    match /certificates/{document} {
+      allow read: if true;
+    }
+
+    match /languages/{document} {
+      allow read: if true;
+    }
+
+    match /interests/{document} {
+      allow read: if true;
+    }
+  }
+}

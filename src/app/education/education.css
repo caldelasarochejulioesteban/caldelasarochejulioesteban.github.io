@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.education-container h3 {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.education-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.education-item h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.education-item p {
+  margin: 0.4rem 0 0;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.education-item p:first-of-type {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}

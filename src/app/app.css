@@ -1,0 +1,116 @@
+:host {
+  --page-bg: #f3f6fb;
+  --page-text: #172033;
+  --surface: #ffffff;
+  --card-border: #e3e9f2;
+  --muted-text: #5c687d;
+  --accent: #4968d8;
+  --accent-soft: #edf1ff;
+  --shadow: rgba(27, 44, 82, 0.08);
+  display: block;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--page-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+:host([data-theme='dark']) {
+  --page-bg: #101725;
+  --page-text: #edf2ff;
+  --surface: #182235;
+  --card-border: #29364d;
+  --muted-text: #afbbcf;
+  --accent: #a7b7ff;
+  --accent-soft: #263354;
+  --shadow: rgba(0, 0, 0, 0.18);
+}
+
+.page {
+  min-height: 100vh;
+  padding: clamp(1.25rem, 4vw, 3.5rem) clamp(1rem, 5vw, 4rem);
+  background: var(--page-bg);
+  color: var(--page-text);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto 1.75rem;
+}
+
+.brand-mark {
+  color: var(--page-text);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.brand-mark span {
+  color: var(--accent);
+}
+
+.theme-toggle {
+  appearance: none;
+  border: 1px solid var(--card-border);
+  background: var(--surface);
+  color: var(--page-text);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.profile-card {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 92% 10%, var(--accent-soft), transparent 38%),
+    var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    margin-bottom: 1.25rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .profile-card {
+    padding: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host,
+  .theme-toggle {
+    transition: none;
+  }
+}
